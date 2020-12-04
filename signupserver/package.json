@@ -1,0 +1,19 @@
+{
+  "name": "signupserver",
+  "version": "1.0.0",
+  "description": "A sign up Application Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Quincy Oghenetejiri",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.15",
+    "nodemon": "^2.0.6"
+  }
+}

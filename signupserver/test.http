@@ -1,0 +1,9 @@
+POST http://localhost:4000/app/signup
+Content-Type: application/json
+
+{
+    "fullName":"Quincy oghenetejiri",
+    "username":"oghenex",
+    "email":"ukumakubequincy@gmail.com",
+    "password":"12345"
+}
