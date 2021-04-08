@@ -7,7 +7,7 @@ class App extends Component {
   constructor(){
     super()
     this.state={
-      fullName:"",
+      fullName:"", 
       username:"",
       email:"",
       password:""
@@ -58,7 +58,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <div className="formdiv">
+        {/* <div className="formdiv">
           <form onSubmit={this.onSubmit}>
             <input type="text" placeholder="Full Name" onChange={this.changeFullName} value={this.state.fullName} className="form-control form-group"/>
             <input type="text" placeholder="Username" onChange={this.changeUsername} value={this.state.username} className="form-control form-group"/>
@@ -66,9 +66,28 @@ class App extends Component {
             <input type="password" placeholder="password" onChange={this.changePassword} value={this.state.password} className="form-control form-group"/>
             <input type="submit" className="btn btn-danger btn-block" value="submit" />
           </form>
-
+        </div> */}
+        <div className="login-box">
+            <h1>Login</h1>
+            <div className="textbox">
+              <i className="fa fa-user" aria-hidden="true"></i>
+              <input type="text" placeholder="Full Name" onChange={this.changeFullName} value={this.state.fullName} className="form-control form-group"/>
+            </div>
+            <div className="textbox">
+              <i className="fa fa-user" aria-hidden="true"></i>
+              <input type="text" placeholder="Username" onChange={this.changeUsername} value={this.state.username} className="form-control form-group"/>
+            </div>
+            <div className="textbox">
+              <i className="fa fa-user" aria-hidden="true"></i>
+              <input type="email" placeholder="Email" onChange={this.changeEmail} value={this.state.email} className="form-control form-group"/>
+            </div>
+            <div className="textbox">
+                <i className="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="Password" onChange={this.changePassword} value={this.state.password} className="form-control form-group"/>
+            </div>
+          <input className="btn" type="submit"  value="Sign in"/>
         </div>
-        
+  
       </div>
     )
   }

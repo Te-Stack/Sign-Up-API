@@ -4,7 +4,7 @@ const signUpTemplate = require("../models/signupmodel")
 const bcrypt = require("bcrypt")
 
 
-//initialising express router
+//initialising express router 
 const router = express.Router()
 
 router.post("/signup",async (req,res)=>{
